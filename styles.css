@@ -6,16 +6,15 @@ body {
 }
 
 header {
-  background: #0B3D91;
+  background: url("header-bg.jpg") no-repeat center center;
+  background-size: cover;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 60px 20px;
 }
 
 header .logo {
-  width: 80px;
-  display: block;
-  margin: 0 auto 10px;
+  display: none; /* अगर आप अलग से ऊपर वाला logo छिपाना चाहें */
 }
 
 nav {
