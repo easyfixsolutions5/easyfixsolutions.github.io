@@ -1,65 +1,56 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f9f9f9;
-  color: #333;
+:root{
+  --blue: #0B84F3;
+  --grey: #cccccc;
+  --bg: #000000;
+  --light: #111111;
+  --radius: 8px;
+  --maxw: 1000px;
+  --font: "Poppins",sans-serif;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:var(--font);
+  color:#fff;
+  background:var(--bg);
+  line-height:1.6;
+}
+.container{max-width:var(--maxw);margin:0 auto;padding:22px}
+
+.site-header{
+  background:#111;
+  color:#fff;
+}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.logo{margin:0;font-weight:600}
+.nav a{color:#fff;text-decoration:none;margin-left:18px;font-weight:500}
+.nav a:hover{color:var(--blue)}
+
+.hero{
+  padding:48px 0;
+  background:#222;
+}
+.hero h2{margin:0;color:var(--blue);font-size:28px}
+.hero p{margin-top:10px;max-width:680px;color:var(--grey)}
+
+.btn{
+  display:inline-block;margin-top:14px;padding:10px 16px;background:var(--blue);color:#fff;text-decoration:none;border-radius:6px;border:none;cursor:pointer;
 }
 
-header {
-  background: url("header-bg.jpg") no-repeat center center;
-  background-size: cover;
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
-}
+.section{padding:40px 0;background:#111}
+.section h3{color:var(--blue);margin-bottom:14px}
+.section p{color:#ccc}
 
-header .logo {
-  display: none; /* अगर आप अलग से ऊपर वाला logo छिपाना चाहें */
+.contact-form{display:flex;flex-direction:column;gap:10px}
+.contact-form input,
+.contact-form textarea{
+  padding:10px;
+  border-radius:6px;
+  border:1px solid #333;
+  background:#222;
+  color:#fff;
 }
+.contact-form input:focus,
+.contact-form textarea:focus{outline:1px solid var(--blue)}
 
-nav {
-  background: #1F618D;
-  text-align: center;
-  padding: 10px;
-}
-
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-main {
-  padding: 20px;
-}
-
-h2 {
-  color: #0B3D91;
-}
-
-ul {
-  list-style: square;
-  padding-left: 20px;
-}
-
-footer {
-  background: #0B3D91;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  margin-top: 20px;
-}
-.logo-center {
-  text-align: center;
-  margin: 30px 0;
-}
-
-.logo-center img {
-  max-width: 200px;   /* size control */
-  height: auto;
-}
+.site-footer{background:#111;padding:16px;text-align:center;color:#777}
