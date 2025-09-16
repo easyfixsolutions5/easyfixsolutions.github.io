@@ -16,13 +16,23 @@ header {
   z-index: 1000;
 }
 
-.logo {
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo-text {
   font-size: 22px;
   font-weight: bold;
   color: #0B3D91;
 }
 
-.logo span {
+.logo-text span {
   color: #d9534f;
 }
 
@@ -41,27 +51,34 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 60px;
+  padding: 40px;
   background: #f5f8fa;
 }
 
+.slider {
+  max-width: 500px;
+  position: relative;
+}
+
+.slides img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
 .hero-text {
-  max-width: 50%;
+  max-width: 45%;
+  margin-left: 30px;
 }
 
 .hero-text h1 {
-  font-size: 36px;
+  font-size: 32px;
   color: #0B3D91;
 }
 
 .hero-text p {
   font-size: 18px;
   margin-top: 10px;
-}
-
-.hero-image img {
-  max-width: 400px;
-  border-radius: 8px;
 }
 
 section {
