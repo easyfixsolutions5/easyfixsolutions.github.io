@@ -7,11 +7,11 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Header / Navbar -->
+  <!-- Header -->
   <header>
     <div class="logo-area">
       <img src="logo.png" alt="EasyFix Logo" class="logo-img">
-      <div class="logo-text">Easy<span>Fix</span> Solutions</div>
+      <h1>Easy<span>Fix</span> Solutions</h1>
     </div>
     <nav>
       <a href="#home">Home</a>
@@ -22,17 +22,21 @@
     </nav>
   </header>
 
-  <!-- Hero Section with Slider -->
+  <!-- Hero with Slider -->
   <section id="home" class="hero">
     <div class="slider">
       <div class="slides fade">
         <img src="slide1.jpg" alt="Security Guard">
-    
       </div>
-    </div>
-    <div class="hero-text">
-      <h1>Empowering Businesses with Trusted Manpower</h1>
-      <p>Security Guards • Housekeeping • Electricians • Plumbers • Painters • Welders • Fitters</p>
+      <div class="slides fade">
+        <img src="slide2.jpg" alt="Housekeeping">
+      </div>
+      <div class="slides fade">
+        <img src="slide3.jpg" alt="Electrician">
+      </div>
+      <div class="slides fade">
+        <img src="slide4.jpg" alt="Plumber">
+      </div>
     </div>
   </section>
 
@@ -43,34 +47,35 @@
       EasyFix Solutions is a trusted manpower provider company offering skilled and unskilled workforce 
       such as Security Guards, Housekeeping Staff, and professional technicians including 
       Electricians, Plumbers, Painters, Welders, and Fitters.  
-      Our mission is to provide reliable, efficient, and cost-effective workforce 
-      that helps businesses run smoothly.
     </p>
   </section>
 
-  <!-- Services -->
-<section id="services">
-<h2>Our Services</h2>
-<ul>
-<li>Security Guards</li>
-<li>Housekeeping Staff</li>
-<li>Electricians</li>
-<li>Plumbers</li>
-<li>Painters</li>
-<li>Welders</li>
-<li>Fitters</li>
-</ul>
-</section>
-      
-    </ul>
+  <!-- Services + Video Side by Side -->
+  <section id="services-video">
+    <div class="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Security Guards</li>
+        <li>Housekeeping Staff</li>
+        <li>Electricians</li>
+        <li>Plumbers</li>
+        <li>Painters</li>
+        <li>Welders</li>
+        <li>Fitters</li>
+      </ul>
+    </div>
+
+    <div class="video-container">
+      <h2>Company Intro Video</h2>
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID" 
+        title="EasyFix Solutions Video"
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
   </section>
-<section id="intro-video">
-  <h2>Company Intro Video</h2>
-  <video width="300" controls autoplay muted loop>
-    <source src="company.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</section>
+
   <!-- Career -->
   <section id="career">
     <h2>Career</h2>
@@ -78,7 +83,7 @@
     If you are interested in building your career with EasyFix Solutions, please contact us.</p>
   </section>
 
-  <!-- Contact Us -->
+  <!-- Contact -->
   <section id="contact">
     <h2>Contact Us</h2>
     <p><strong>Phone:</strong> +91 9990200207, 9717814837, 9990394230</p>
@@ -91,11 +96,10 @@
     <p>&copy; 2025 EasyFix Solutions | All Rights Reserved</p>
   </footer>
 
-  <!-- JS for Slider -->
+  <!-- Slider Script -->
   <script>
     let slideIndex = 0;
     showSlides();
-
     function showSlides() {
       let i;
       let slides = document.getElementsByClassName("slides");
@@ -105,9 +109,8 @@
       slideIndex++;
       if (slideIndex > slides.length) {slideIndex = 1}    
       slides[slideIndex-1].style.display = "block";  
-      setTimeout(showSlides, 3000); // 3 seconds per slide
+      setTimeout(showSlides, 3000); // Change image every 3s
     }
   </script>
 </body>
 </html>
-
