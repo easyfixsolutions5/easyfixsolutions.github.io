@@ -1,111 +1,86 @@
 body {
-
   margin: 0;
-
   font-family: Arial, sans-serif;
-
-  background: #f9f9f9;
-
-  color: #333;
-
+  line-height: 1.6;
 }
- 
+
 header {
-
-  background: url("header-bg.jpg") no-repeat center center;
-
-  background-size: cover;
-
-  color: white;
-
-  text-align: center;
-
-  padding: 60px 20px;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
- 
-header .logo {
 
-  display: none; /* अगर आप अलग से ऊपर वाला logo छिपाना चाहें */
-
-}
- 
-nav {
-
-  background: #1F618D;
-
-  text-align: center;
-
-  padding: 10px;
-
-}
- 
-nav a {
-
-  color: white;
-
-  margin: 0 15px;
-
-  text-decoration: none;
-
+.logo {
+  font-size: 22px;
   font-weight: bold;
-
-}
- 
-nav a:hover {
-
-  text-decoration: underline;
-
-}
- 
-main {
-
-  padding: 20px;
-
-}
- 
-h2 {
-
   color: #0B3D91;
-
 }
- 
+
+.logo span {
+  color: #d9534f;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #0B3D91;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  background: #f5f8fa;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  color: #0B3D91;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.hero-image img {
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+section {
+  padding: 50px;
+}
+
+h2 {
+  color: #0B3D91;
+  margin-bottom: 15px;
+}
+
 ul {
-
-  list-style: square;
-
+  list-style: disc;
   padding-left: 20px;
-
 }
- 
+
 footer {
-
+  text-align: center;
   background: #0B3D91;
-
   color: white;
-
-  text-align: center;
-
-  padding: 10px;
-
-  margin-top: 20px;
-
+  padding: 15px;
 }
-
-.logo-center {
-
-  text-align: center;
-
-  margin: 30px 0;
-
-}
- 
-.logo-center img {
-
-  max-width: 200px;   /* size control */
-
-  height: auto;
-
-}
-
- 
