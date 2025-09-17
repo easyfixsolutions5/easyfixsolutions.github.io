@@ -48,12 +48,19 @@ nav a:hover {
   color: #0B3D91;
 }
 
-/* Hero slider */
 .hero {
-  position: relative;
-  background: #f5f8fa;
   text-align: center;
+  background: #f5f8fa;
   padding: 20px;
+}
+
+.hero-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
 }
 
 .slides {
