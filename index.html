@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EasyFix Solutions</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Header -->
@@ -12,6 +13,7 @@
     <div class="logo-area">
       <img src="logo.png" alt="EasyFix Logo" class="logo-img">
       <h1>Easy<span>Fix</span> Solutions</h1>
+      <p class="tagline">Your Trusted Partner</p>
     </div>
     <nav>
       <a href="#home">Home</a>
@@ -25,16 +27,19 @@
   <!-- Hero Section with Banner -->
   <section id="home" class="hero">
     <img src="banner.jpg" alt="EasyFix Solutions Banner" class="hero-img">
+    <div class="hero-text">
+      <h2>Empowering Businesses with Trusted Manpower</h2>
+      <p>Security Guards • Housekeeping • Electricians • Plumbers • Welders • Fitters</p>
+    </div>
   </section>
 
   <!-- About Us -->
-  <section id="about">
+  <section id="about" class="section">
     <h2>About Us</h2>
     <p>
       EasyFix Solutions is a trusted manpower and service provider company headquartered in Ghaziabad, Uttar Pradesh. 
       Since our inception, we have been committed to helping businesses operate smoothly by supplying reliable 
-      workforce and technical experts across multiple industries. 
-      We pride ourselves on our ability to provide the right people for the right job at the right time.
+      workforce and technical experts across multiple industries.
     </p>
     <p>
       Our manpower services include skilled, semi-skilled and unskilled categories such as Security Guards, 
@@ -44,8 +49,8 @@
     </p>
   </section>
 
-  <!-- Services + Video Side by Side -->
-  <section id="services-video">
+  <!-- Services + Video -->
+  <section id="services-video" class="section two-column">
     <div class="services">
       <h2>Our Services</h2>
       <ul>
@@ -58,7 +63,6 @@
         <li>Fitters</li>
       </ul>
     </div>
-
     <div class="video-container">
       <h2>Company Intro Video</h2>
       <video controls autoplay muted loop>
@@ -69,16 +73,15 @@
   </section>
 
   <!-- Career -->
-  <section id="career">
+  <section id="career" class="section">
     <h2>Career</h2>
     <p>
-      At EasyFix Solutions, people are at the heart of our business. We believe that our workers are not just 
-      employees, but partners in our journey. We are proud to provide honest work, timely salary payments, 
+      At EasyFix Solutions, people are at the heart of our business. We provide honest work, timely salary payments, 
       proper statutory benefits (PF, ESIC, Bonus) and a safe working environment.
     </p>
 
     <h3>Current Hiring Categories</h3>
-    <ul>
+    <ul class="list-grid">
       <li>Security Guards (Male & Female)</li>
       <li>Housekeeping & Pantry Staff</li>
       <li>Electricians & Technicians</li>
@@ -86,100 +89,38 @@
       <li>Painters & General Maintenance Staff</li>
       <li>Supervisors & Team Leaders</li>
     </ul>
-
-    <h3>Why Work With Us</h3>
-    <ul>
-      <li>Assured monthly wages with no delays.</li>
-      <li>Statutory benefits (EPF, ESIC, Bonus) as per government norms.</li>
-      <li>On-the-job training and skill development programs.</li>
-      <li>Safe work conditions and respectful environment.</li>
-      <li>Opportunities for promotion and career growth within the company.</li>
-    </ul>
-
-    <h3>How to Apply</h3>
-    <p>
-      Interested candidates can reach us through:
-    </p>
-    <ul>
-      <li><strong>Phone:</strong> +91 9990200207, 9717814837, 9990394230</li>
-      <li><strong>Email:</strong> <a href="mailto:easyfixsolutions5@gmail.com">easyfixsolutions5@gmail.com</a></li>
-      <li>Walk-in at our office: 317, 3rd Floor Park Town Commercial Complex, Aditya World City, Ghaziabad, UP</li>
-    </ul>
-
-    <p>
-      Once we receive your details, our HR team will contact you for a short interaction. If you qualify, 
-      we will guide you through the joining formalities and deployment process. We welcome hardworking, 
-      disciplined and honest candidates to be part of the EasyFix Solutions family.
-    </p>
   </section>
 
- <!-- Contact -->
-<section id="contact">
-  <h2>Contact Us</h2>
-  <p><strong>Phone:</strong> +91 9990200207, 9717814837, 9990394230</p>
-  <p><strong>Email:</strong> easyfixsolutions5@gmail.com</p>
-  <p><strong>Location:</strong> 317, 3rd Floor Park Town Commercial Complex,  
-    Aditya World City, Ghaziabad, Uttar Pradesh 201001, India</p>
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p><strong>Phone:</strong> +91 9990200207, 9717814837, 9990394230</p>
+    <p><strong>Email:</strong> easyfixsolutions5@gmail.com</p>
+    <p><strong>Location:</strong> 317, 3rd Floor Park Town Commercial Complex,  
+      Aditya World City, Ghaziabad, Uttar Pradesh 201001, India</p>
 
-  <!-- Enquiry Form -->
-  <h3>Send Enquiry</h3>
-  <form action="https://formspree.io/f/mandrlgj" method="POST" class="contact-form">
-    <label>Full Name</label>
-    <input type="text" name="name" required>
+    <!-- Enquiry Form -->
+    <h3>Send Enquiry</h3>
+    <form action="https://formspree.io/f/mandrlgj" method="POST" class="contact-form">
+      <label>Full Name</label>
+      <input type="text" name="name" required>
 
-    <label>Mobile Number</label>
-    <input type="text" name="mobile" required>
+      <label>Mobile Number</label>
+      <input type="text" name="mobile" required>
 
-    <label>Email</label>
-    <input type="email" name="email" required>
+      <label>Email</label>
+      <input type="email" name="email" required>
 
-    <label>Your Inquiry</label>
-    <textarea name="inquiry" rows="4" required></textarea>
+      <label>Your Inquiry</label>
+      <textarea name="inquiry" rows="4" required></textarea>
 
-    <button type="submit">Submit</button>
-  </form>
-</section>
-
-  <!-- Hidden Contact Form Modal -->
-  <div id="contactFormModal" class="modal">
-    <div class="modal-content">
-      <span id="closeFormBtn" class="close">&times;</span>
-      <h2>Send Us an Enquiry</h2>
-      <form id="contactForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Your Enquiry:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-  </div>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
 
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 EasyFix Solutions | All Rights Reserved</p>
   </footer>
-
-  <!-- Contact Form Script -->
-  <script>
-    const openBtn = document.getElementById("openFormBtn");
-    const modal = document.getElementById("contactFormModal");
-    const closeBtn = document.getElementById("closeFormBtn");
-
-    openBtn.onclick = () => { modal.style.display = "flex"; }
-    closeBtn.onclick = () => { modal.style.display = "none"; }
-    window.onclick = (e) => { if (e.target == modal) modal.style.display = "none"; }
-
-    document.getElementById("contactForm").addEventListener("submit", function(e) {
-      e.preventDefault();
-      alert("Thank you! Your enquiry has been submitted.");
-      modal.style.display = "none";
-    });
-  </script>
 </body>
 </html>
