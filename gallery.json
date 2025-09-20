@@ -1,0 +1,17 @@
+[
+  {
+    "type": "image",
+    "src": "images/gallery/img1.jpg",
+    "title": "Office team"
+  },
+  {
+    "type": "image",
+    "src": "images/gallery/img2.jpg",
+    "title": "Housekeeping staff"
+  },
+  {
+    "type": "video",
+    "src": "videos/gallery/intro.mp4",
+    "title": "Company Intro"
+  }
+]
