@@ -1,10 +1,6 @@
-/* Reset */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
 body {
-  font-family: "Poppins", sans-serif;
-  background: #f9f9f9;
-  color: #333;
+  margin: 0;
+  font-family: Arial, sans-serif;
   line-height: 1.6;
 }
 
@@ -13,152 +9,167 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #0B2F6A;
-  padding: 15px 40px;
-  color: #fff;
+  padding: 15px 30px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo-area {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .logo-img {
-  width: 50px;
+  height: 40px;
+  margin-right: 10px;
 }
 
-header h1 {
+.logo-area h1 {
   font-size: 22px;
-  font-weight: 600;
+  font-weight: bold;
+  color: #0B3D91;
 }
 
-header h1 span {
-  color: #f5b600;
-}
-
-.tagline {
-  font-size: 14px;
-  font-weight: 500;
-  color: #28a745;
+.logo-area span {
+  color: #d9534f;
 }
 
 nav a {
-  color: #fff;
+  margin: 0 10px;
   text-decoration: none;
-  margin-left: 20px;
-  font-weight: 500;
-  transition: color 0.3s ease;
+  color: #333;
+  font-weight: bold;
 }
 
 nav a:hover {
-  color: #f5b600;
+  color: #0B3D91;
 }
 
-/* Hero */
+/* Hero Banner */
 .hero {
-  position: relative;
   text-align: center;
+  background: #f5f8fa;
+  padding: 20px;
 }
 
 .hero-img {
   width: 50%;
-  max-height: 250px;
+  max-height: 200px;
   object-fit: cover;
-}
-
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(0,0,0,0.6);
-  padding: 20px 30px;
   border-radius: 8px;
-  color: #fff;
 }
 
-/* Section */
-.section {
-  padding: 60px 40px;
-  background: #fff;
-  margin: 20px 0;
-  border-radius: 10px;
-  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+/* Sections */
+section {
+  padding: 40px 20px;
 }
 
-.section h2 {
-  font-size: 26px;
-  color: #0B2F6A;
-  margin-bottom: 20px;
+h2 {
+  color: #0B3D91;
+  margin-bottom: 15px;
 }
 
 /* Services + Video */
-.two-column {
+#services-video {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.two-column > div {
+.services {
   flex: 1;
+  min-width: 250px;
+}
+
+.video-container {
+  flex: 1;
+  min-width: 300px;
 }
 
 .video-container video {
-  width: 50%;
-  border-radius: 10px;
-}
-
-/* Lists */
-.list-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
-  list-style: none;
-}
-
-.list-grid li {
-  background: #f0f4ff;
-  padding: 12px;
+  width: 100%;
+  height: 300px;
   border-radius: 8px;
 }
 
-/* Contact Form */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  max-width: 500px;
-  margin-top: 20px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 14px;
-}
-
-.contact-form button {
-  background: #0B2F6A;
-  color: #fff;
+/* Contact Button */
+#contact button {
+  background: #0B3D91;
+  color: white;
   border: none;
-  padding: 12px;
-  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background 0.3s ease;
 }
 
-.contact-form button:hover {
-  background: #f5b600;
-  color: #000;
+#contact button:hover {
+  background: #d9534f;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+}
+
+.close {
+  float: right;
+  font-size: 22px;
+  cursor: pointer;
+  color: #333;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background: #0B3D91;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #d9534f;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  background: #0B2F6A;
-  color: #fff;
+  background: #0B3D91;
+  color: white;
   padding: 15px;
-  margin-top: 20px;
 }
