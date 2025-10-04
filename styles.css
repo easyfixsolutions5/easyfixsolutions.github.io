@@ -157,7 +157,7 @@ h2 {
 
 /* Video */
 .video-container video {
-  width: 100%;
+  width: 20%;
   border-radius: 12px;
   box-shadow: 0 3px 8px rgba(0,0,0,0.2);
 }
