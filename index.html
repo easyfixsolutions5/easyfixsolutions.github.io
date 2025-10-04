@@ -5,120 +5,128 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EasyFix Solutions</title>
   <link rel="stylesheet" href="styles.css">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Header -->
   <header>
     <div class="logo-area">
-      <img src="logo.png" alt="EasyFix Logo" class="logo-img">
-      <div class="logo-text">
-        <h1>Easy<span>Fix</span> Solutions</h1>
-        <p class="tagline">Your Needs, Our Mission</p>
-      </div>
+      <img src="images/logo.png" alt="EasyFix Logo" class="logo-img">
+      <h1>Easy<span>Fix</span> Solutions</h1>
     </div>
     <nav>
       <a href="#home">Home</a>
       <a href="#about">About</a>
-      <a href="#services-video">Services</a>
-      <a href="#career">Career</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="#contact" class="contact-btn">Contact Us</a>
+      <a href="#services">Services</a>
+      <a href="#stats">Stats</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-overlay">
-      <h2>Trusted Manpower & Technical Services</h2>
-      <p>Providing Reliable Workforce & Experts Across Industries</p>
-      <a href="#contact" class="btn-primary">Get in Touch</a>
+  <section class="hero" id="home">
+    <div class="hero-text" data-aos="fade-right">
+      <h2>Reliable Home & Office Maintenance</h2>
+      <p>Plumbing, Electrical, Painting & More – We Fix Everything!</p>
+      <button class="cta-btn">Get a Free Quote</button>
     </div>
-    <img src="banner.jpg" alt="EasyFix Solutions Banner" class="hero-img">
-  </section>
-
-  <!-- About -->
-  <section id="about">
-    <h2>About Us</h2>
-    <p>
-      EasyFix Solutions is a trusted manpower and service provider headquartered in Ghaziabad, UP. 
-      We deliver reliable workforce & technical experts for smooth business operations.
-    </p>
-    <p>
-      Our services include Security Guards, Housekeeping, Pantry Boys, Supervisors, Electricians, Plumbers, 
-      Painters, Welders & Fitters. We provide both short-term and long-term support as per client needs.
-    </p>
+    <div class="hero-img" data-aos="fade-left">
+      <img src="images/hero-tools.png" alt="EasyFix Services">
+    </div>
   </section>
 
   <!-- Services -->
-  <section id="services-video">
-    <div class="services">
-      <h2>Our Services</h2>
-      <div class="card-grid">
-        <div class="card">Security Guards</div>
-        <div class="card">Housekeeping Staff</div>
-        <div class="card">Electricians</div>
-        <div class="card">Plumbers</div>
-        <div class="card">Painters</div>
-        <div class="card">Welders</div>
-        <div class="card">Fitters</div>
+  <section id="services">
+    <h2 data-aos="fade-up">Our Services</h2>
+    <div class="services-grid">
+      <div class="card" data-aos="zoom-in">
+        <img src="images/plumber.png" alt="Plumber">
+        <h3>Plumbing</h3>
+        <p>Fixing leaks, taps, and water systems with precision.</p>
       </div>
-    </div>
-
-    <div class="video-container">
-      <h2>Company Intro Video</h2>
-      <video controls autoplay muted loop>
-        <source src="company.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <div class="card" data-aos="zoom-in" data-aos-delay="200">
+        <img src="images/electrician.png" alt="Electrician">
+        <h3>Electrical</h3>
+        <p>Safe wiring, lighting, and power solutions.</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="400">
+        <img src="images/painter.png" alt="Painter">
+        <h3>Painting</h3>
+        <p>Refreshing interiors & exteriors with vibrant colors.</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="600">
+        <img src="images/wallpaper.png" alt="Wallpaper">
+        <h3>Wallpaper</h3>
+        <p>Stylish wallpapers for modern home interiors.</p>
+      </div>
     </div>
   </section>
 
-  <!-- Career -->
-  <section id="career">
-    <h2>Career Opportunities</h2>
-    <p>
-      At EasyFix Solutions, we treat our workforce as partners. We ensure honest work, timely payments, PF, 
-      ESIC, Bonus, training & safe working conditions.
-    </p>
+  <!-- Stats -->
+  <section id="stats">
+    <div class="stats-grid">
+      <div class="stat" data-aos="fade-up">
+        <h2 class="counter" data-target="2500">0</h2>
+        <p>Happy Customers</p>
+      </div>
+      <div class="stat" data-aos="fade-up" data-aos-delay="200">
+        <h2 class="counter" data-target="1200">0</h2>
+        <p>Projects Completed</p>
+      </div>
+      <div class="stat" data-aos="fade-up" data-aos-delay="400">
+        <h2 class="counter" data-target="50">0</h2>
+        <p>Expert Technicians</p>
+      </div>
+    </div>
+  </section>
 
-    <h3>Hiring Categories</h3>
-    <ul class="highlight-list">
-      <li>Security Guards (Male & Female)</li>
-      <li>Housekeeping & Pantry Staff</li>
-      <li>Electricians & Technicians</li>
-      <li>Plumbers, Fitters & Welders</li>
-      <li>Painters & Maintenance Staff</li>
-      <li>Supervisors & Team Leaders</li>
-    </ul>
+  <!-- Gallery -->
+  <section id="gallery" class="gallery">
+    <h2 data-aos="fade-up">Our Work Gallery</h2>
+    <div class="gallery-grid">
+      <img src="images/work1.jpg" alt="Work 1">
+      <img src="images/work2.jpg" alt="Work 2">
+      <img src="images/work3.jpg" alt="Work 3">
+      <img src="images/work4.jpg" alt="Work 4">
+    </div>
   </section>
 
   <!-- Contact -->
   <section id="contact">
-    <h2>Contact Us</h2>
-    <div class="contact-details">
-      <p><strong>Phone:</strong> +91 9990200207, 9717814837, 9990394230</p>
-      <p><strong>Email:</strong> easyfixsolutions5@gmail.com</p>
-      <p><strong>Address:</strong> 317, 3rd Floor Park Town Commercial Complex, Aditya World City, Ghaziabad, UP</p>
-    </div>
-
-    <form action="https://formspree.io/f/mandrlgj" method="POST" class="contact-form">
-      <label>Full Name</label>
-      <input type="text" name="name" required>
-      <label>Mobile Number</label>
-      <input type="text" name="mobile" required>
-      <label>Email</label>
-      <input type="email" name="email" required>
-      <label>Your Inquiry</label>
-      <textarea name="inquiry" rows="4" required></textarea>
-      <button type="submit" class="btn-primary">Submit</button>
-    </form>
+    <h2 data-aos="fade-up">Get in Touch</h2>
+    <button class="pulse-btn">Contact Us</button>
   </section>
 
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 EasyFix Solutions | All Rights Reserved</p>
   </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    // Counter Animation
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach(counter => {
+      counter.innerText = '0';
+      const updateCounter = () => {
+        const target = +counter.getAttribute('data-target');
+        const current = +counter.innerText;
+        const increment = target / 200;
+        if (current < target) {
+          counter.innerText = `${Math.ceil(current + increment)}`;
+          setTimeout(updateCounter, 20);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCounter();
+    });
+  </script>
 </body>
 </html>
